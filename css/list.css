@@ -1,0 +1,207 @@
+.content{
+    display: block;
+    position: relative;
+    padding:.20rem 1.83rem;
+}
+/*位置显示样式*/
+.content .title{
+    display: block;
+    position: relative;
+    height: .26rem;
+    background-color: #000;
+    margin-bottom:.10rem;
+}
+.content .title span:nth-child(1){
+    position: absolute;
+    display: inline-block;
+    width: 1.12rem;
+    height: 100%;
+    background-color: #fff;
+    font: .16rem "微软雅黑",Arial, sans-serif;
+    text-align: center;
+    line-height:.22rem;
+    border-bottom: .01rem solid #000;
+    box-sizing: border-box;
+}
+.content .title .address{
+    display: block;
+    color: #FFFFFF;
+    margin-left: 1.19rem;
+    height: 100%;
+}
+.content .title .address a{
+    float: left;
+    color: #FFFFFF;
+    font: .14rem "微软雅黑",Arial, sans-serif;
+    line-height: .26rem;
+}
+.content .title .address span{
+    float: left;
+    font-size: .14rem;
+    line-height: .26rem;
+}
+/*主要信息*/
+.content .shop{
+    display: block;
+}
+.content .shop:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*内容左边shop-list*/
+.content .shop .shop-list{
+    display: block;
+    float: left;
+    width: 1.68rem;
+    background-color: #eaeaea;
+    text-align: center;
+}
+.content .shop .shop-list p{
+    font: .12rem "微软雅黑",Arial, sans-serif;
+    line-height: .42rem;
+}
+.content .shop .shop-list .shop-list-title{
+    display: block;
+    font-size: .18rem;
+    text-align: center;
+    height: .64rem;
+    line-height: .64rem;
+}
+.content .shop .shop-list ul{
+    display: block;
+}
+.content .shop .shop-list ul li{
+    display: block;
+    border-bottom: .01rem solid #cfcfcf;
+}
+.content .shop .shop-list a{
+    display: block;
+    color: #000;
+}
+/*内容右边商品展示shop-msg*/
+.content .shop .shop-msg{
+    float: left;
+    display: block;
+    width: 8.32rem;
+    position: relative;
+    padding:.35rem .60rem;
+    box-sizing: border-box;
+}
+.content .shop .shop-msg .shop-msg-header{
+    text-align: center;
+}
+.content .shop .shop-msg .shop-msg-header p{
+    font: .14rem "微软雅黑",Arial, sans-serif;
+}
+.content .shop .shop-msg .shop-msg-header p:nth-child(1){
+    font-size: .24rem;
+    color: #b8b7b7;
+}
+.content .shop .shop-msg .shop-msg-header p:nth-child(2){
+    font-size: .36rem;
+    line-height: .50rem;
+}
+.content .shop .shop-msg .shop-msg-header p:nth-child(3){
+    color: #626262;
+}
+.content .shop .shop-msg .shop-msg-pro-show{
+    position: relative;
+}
+.content .shop .shop-msg .shop-msg-pro-show>ul{
+    display: block;
+    padding:.20rem 0;
+}
+.content .shop .shop-msg .shop-msg-pro-show>ul li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding:.30rem 0;
+}
+.content .shop .shop-msg .shop-msg-pro-show>ul li a{
+    display: block;
+}
+.content .shop .shop-msg .shop-msg-pro-show>ul li img{
+    width: 1.73rem;
+    height: 2.49rem;
+}
+.content .shop .shop-msg .shop-msg-pro-show>ul li p{
+    font: .14rem "微软雅黑",Arial, sans-serif;
+    line-height: .24rem;
+}
+.content .shop .shop-msg .shop-msg-pro-show>ul li span{
+    font: .12rem "微软雅黑",Arial, sans-serif;
+    color: #6d6d6d;
+}
+/*清除浮动*/
+.content .shop .shop-msg .shop-msg-pro-show>ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*页数跳转及显示shop-msg-passage*/
+.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage{
+    position: relative;
+}
+.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage ul{
+    text-align: center;
+}
+.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage li{
+    display: inline-block;
+    padding:0 .05rem;
+}
+.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage li a{
+    font: .12rem "微软雅黑",Arial, sans-serif;
+    color: #747474;
+}
+.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage li a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage li:first-of-type a:hover,.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage li:nth-of-type(9) a:hover{
+    background-color: #fff;
+    color: #2577e2;
+    border-bottom: .01rem solid #2577e2;
+}
+.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage li label{
+    display: block;
+}
+.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage li input[type='text']{
+    display: block;
+    width: .29rem;
+    height: .13rem;
+    box-sizing: border-box;
+    border: .01rem solid #000;
+}
+.content .shop .shop-msg .shop-msg-pro-show .shop-msg-passage li input[type='submit']{
+    font: .12rem "微软雅黑",Arial, sans-serif;
+    border: none;
+    background-color: #fff;
+    color: #747474;
+}
+/*适应性配置*/
+@media screen and (max-device-width: 960px) and (min-device-width: 320px){
+    .content{
+        padding:0;
+    }
+    .content .title{
+        margin:0;
+    }
+    .content .shop .shop-list{
+        width: 20%;
+    }
+    .content .shop .shop-msg{
+        width: 80%;
+    }
+    .content .shop .shop-msg .shop-msg-pro-show>ul>li{
+        width: 50%;
+    }
+    .content .shop .shop-msg .shop-msg-pro-show>ul>li:last-of-type{
+        display: none;
+    }
+}

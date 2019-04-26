@@ -1,0 +1,55 @@
+/*尾部div*/
+.footer{
+    display: block;
+    position: relative;
+    padding:0 1.84rem;
+}
+.footer .footer-container{
+    background: #000 url("../images/EASON-logo-hidden.png") no-repeat 50% 0;
+    padding:0 .74rem .22rem;
+}
+.footer .footer-container table,.footer .footer-container table tbody,.footer .footer-container table tr{
+    display: block;
+}
+.footer .footer-container table tr{
+    display: flex;
+    justify-content: space-between;
+    padding:.42rem 0 .32rem;
+}
+.footer .footer-container table td{
+    display: inline-block;
+    margin:0 .37rem;
+    width: 33%;
+    box-sizing: border-box;
+}
+.footer .footer-container table td p{
+    display: block;
+    border-bottom: .01rem solid #dcdcdc;
+    padding-bottom:.05rem;
+}
+.footer .footer-container table td p,.footer .footer-container .address span{
+    font: .14rem "微软雅黑", Arial, sans-serif;
+}
+.footer .footer-container table a,.footer .footer-container table p,.footer .footer-container .address span{
+    color: #dcdcdc;
+}
+.footer .footer-container table a{
+    display: block;
+    font: .12rem "微软雅黑", Arial, sans-serif;
+    padding-top:.1rem;
+}
+.footer .footer-container .address{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.footer .footer-container .address span{
+    display: inline-block;
+    padding:0 .10rem;
+}
+/*适应性配置*/
+@media screen and (max-device-width: 960px) and (min-device-width: 320px){
+    .footer .footer-container>table{
+        display: none;
+    }
+}

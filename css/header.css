@@ -1,0 +1,179 @@
+.header .top{
+    width: 100%;
+    padding:0 1.83rem;
+    height: .40rem;
+    background-color: #212121;
+    box-sizing: border-box;
+}
+.header .top .mini-logo{
+    float: left;
+    display: inline-block;
+    height: .40rem;
+    width: 10%;
+}
+.header .top .mini-logo a{
+    display: block;
+    height: .40rem;
+}
+.header .top .mini-logo a img{
+    display: block;
+    height: .40rem;
+}
+/*top的右边*/
+.header .top .top-right{
+    width: 90%;
+    height: 100%;
+    float: right;
+}
+.header .top .top-right span{
+    float: right;
+    font: .12rem "微软雅黑",Arial, sans-serif;
+    color: #bbbbbb;
+    line-height:.40rem;
+    margin-left: .20rem;
+}
+.header .top .top-right .search{
+    display: block;
+    float: right;
+    width: 3.52rem;
+    height: .20rem;
+    border: .01rem solid #979797;
+    background-color: #fff;
+    margin:.10rem 0;
+}
+.header .top .top-right .search input{
+    text-decoration: none;
+    border:none;
+}
+.header .top .top-right .search input:nth-of-type(1){
+    float: left;
+    height: .20rem;
+    width: 2.5rem;
+    font-size:.12rem;
+}
+.header .top .top-right .search input:nth-of-type(2){
+    float: right;
+    text-decoration: none;
+    background: none;
+    font: .12rem "微软雅黑",Arial, sans-serif;
+    color: #a8a8b7;
+    letter-spacing: .05rem;
+    line-height: .20rem;
+}
+
+/*nav*/
+.header .nav{
+    padding:0 1.83rem;
+    /*height: 1.17rem;*/
+    background-color: #ffffff;
+}
+.header .nav .logo{
+    display: inline-block;
+    height: 100%;
+    padding:.10rem .95rem;
+    box-sizing: border-box;
+}
+.header .nav .logo img{
+    height: 100%;
+}
+.header .nav nav{
+    display: inline-block;
+}
+.header .nav ul li{
+    display: inline-block;
+}
+.header .nav ul li a{
+    display: block;
+    font: .14rem "微软雅黑", Arial, sans-serif;
+    padding:.10rem .28rem;
+    color: #000;
+}
+
+/*轮播图*/
+.header .banner{
+    position: relative;
+    overflow: hidden;
+}
+.header .banner>ul{
+    width: 5000px;
+    animation:run 10s linear infinite;
+}
+.header .banner ul li{
+    width: 13.66rem;
+    height: 4.74rem;
+    overflow: hidden;
+    float: left;
+}
+@keyframes run {
+    from{
+        margin-left:0;
+    }
+    to{
+        margin-left: -40.98rem;
+    }
+}
+.header .banner ul:hover{
+    animation-play-state: paused;
+}
+/*用透明度来展示它父元素的背景元素，再在父元素设置背景颜色为黑色来实现蒙纱效果*/
+.header .banner ul:hover li{
+    opacity:.5;
+}
+.header .banner ul li:hover{
+    opacity: 1;
+}
+.header .banner a{
+    display: block;
+}
+.header .banner img{
+    width: 100%;
+}
+/*固定设置*/
+.header .banner .roll{
+    position: absolute;
+    left: 50%;
+    bottom: .21rem;
+    transform: translateX(-50%);
+    z-index: 40;
+}
+.header .banner .roll ul{
+    width: 100%;
+}
+.header .banner .roll ul li{
+    display: inline-block;
+    width: .44rem;
+    height: .07rem;
+    background-color: #b4b2b3;
+    margin:0 .03rem;
+    cursor: pointer;
+}
+.header .banner .roll ul li:hover{
+    background-color: #fff;
+}
+.header .banner .roll ul li:nth-of-type(2){
+    background-color: #fff;
+}
+/*适应性配置*/
+@media screen and (max-device-width: 960px) and (min-device-width: 320px){
+    .header .top{
+        display: none;
+    }
+    .header .nav{
+        padding:0;
+    }
+    .header .nav .logo{
+        display: block;
+        text-align: center;
+    }
+    .header .nav nav{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #292929;
+    }
+    .header .nav nav ul li a{
+        color: #fff;
+        font-size: .20rem;
+    }
+}
+

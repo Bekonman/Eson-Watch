@@ -1,0 +1,371 @@
+.content{
+    padding:.20rem 1.83rem;
+}
+.content .title{
+    display: block;
+    position: relative;
+    height: .26rem;
+    background-color: #000;
+    margin-bottom:.10rem;
+}
+.content .title span:nth-child(1){
+    position: absolute;
+    display: inline-block;
+    width: 1.12rem;
+    height: 100%;
+    background-color: #fff;
+    font: .16rem "微软雅黑",Arial, sans-serif;
+    text-align: center;
+    line-height:.22rem;
+    border-bottom: .01rem solid #000;
+    box-sizing: border-box;
+}
+.content .title .address{
+    display: block;
+    color: #FFFFFF;
+    margin-left: 1.19rem;
+    height: 100%;
+}
+.content .title .address a{
+    float: left;
+    color: #FFFFFF;
+    font: .14rem "微软雅黑",Arial, sans-serif;
+    line-height: .26rem;
+}
+.content .title .address span{
+    float: left;
+    font-size: .14rem;
+    line-height: .26rem;
+}
+/*产品详情*/
+.content .base-msg{
+    position: relative;
+    display: block;
+    padding:.90rem .90rem 0;
+}
+.content .base-msg .base-msg1{
+    position: relative;
+}
+.content .base-msg .base-msg-pic{
+    float: left;
+    padding-left:.25rem;
+    box-sizing: border-box;
+}
+.content .base-msg .base-msg-pic img{
+    width: 4.11rem;
+    height: 5.05rem;
+}
+.content .base-msg .base-msg-some{
+    float: left;
+    padding:1.25rem 0 0 .80rem;
+}
+.content .base-msg .base-msg-some h1{
+    font: .48rem "微软雅黑",Arial, sans-serif;
+    color: #323232;
+}
+.content .base-msg .base-msg-some>p:nth-child(1){
+    font: .18rem "微软雅黑",Arial, sans-serif;
+    line-height: .38rem;
+}
+.content .base-msg .base-msg-some>p:nth-child(2){
+    font: .14rem "微软雅黑",Arial, sans-serif;
+    color: #3c3c3c;
+    line-height:.34rem;
+}
+.content .base-msg .base-msg-some .price{
+    padding:.25rem 0;
+}
+.content .base-msg .base-msg-some .price,.content .base-msg .base-msg-some label .hidden{
+    display: none;
+}
+.content .base-msg .base-msg-some .price p:nth-child(1){
+    font: .18rem "微软雅黑",Arial, sans-serif;
+    color: #3a3a3a;
+}
+.content .base-msg .base-msg-some .price p:nth-child(2){
+    font: .12rem "微软雅黑",Arial, sans-serif;
+    color: #515151;
+}
+.content .base-msg .base-msg-some input[type="checkbox"]{
+    display: none;
+}
+.content .base-msg .base-msg-some label{
+    display: inline-block;
+    font: .16rem "微软雅黑",Arial, sans-serif;
+    color: #757575;
+}
+.content .base-msg .base-msg-some label span{
+    padding: .1rem 0 0 .05rem;
+    border-bottom: 1px solid #d0d0d0;
+}
+.content .base-msg .base-msg-some label .show{
+    display: block;
+    margin:.40rem 0;
+}
+/*清除浮动*/
+.content .base-msg .base-msg1::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*隐藏价格效果*/
+.content .base-msg .base-msg-some .checkbox:checked + .price,.content .base-msg .base-msg-some .checkbox:checked ~ label .hidden{
+    display: block;
+}
+.content .base-msg .base-msg-some .checkbox:checked ~ label .show{
+    display: none;
+}
+/*信息展示第二部分*/
+.content .base-msg .base-msg2{
+    padding: .75rem .20rem .10rem ;
+}
+.content .base-msg .base-msg2::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.content .base-msg .base-msg2 .passage-left{
+    float: left;
+    width: 4.09rem;
+}
+.content .base-msg .base-msg2 .passage-left h1{
+    font: .28rem "微软雅黑",Arial, sans-serif;
+    padding-bottom:.15rem;
+}
+.content .base-msg .base-msg2 .passage-left p{
+     font: .14rem "微软雅黑",Arial, sans-serif;
+    padding:.15rem 0;
+}
+.content .base-msg .base-msg2 .passage-right{
+    float: left;
+    padding-left:.55rem;
+}
+.content .base-msg .base-msg2 .passage-right h1{
+    display: block;
+    font: .18rem "微软雅黑",Arial, sans-serif;
+    padding:.10rem 0;
+    margin-bottom:.05rem;
+    border-bottom: 1px solid #bfbfbf;
+}
+.content .base-msg .base-msg2 .passage-right p{
+    color: #454545;
+    font: .14rem "微软雅黑",Arial, sans-serif;
+}
+.content .base-msg .base-msg2 .passage-right>p:last-of-type{
+    color: #a8a8a8;
+}
+.content .base-msg .base-msg2 .passage-right .passage-right-mini-left,.content .base-msg .base-msg2 .passage-right .passage-right-mini-right{
+    float: left;
+    margin-top:.20rem;
+}
+.content .base-msg .base-msg2 .passage-right .passage-right-mini-right{
+    padding-left:.50rem;
+}
+.content .base-msg .base-msg2 .passage-right .passage-right-mini-left p:nth-child(2),.content .base-msg .base-msg2 .passage-right .passage-right-mini-right p:nth-child(2){
+    color:#9c9c9c;
+}
+/*信息展示第三部分*/
+.content .base-msg .base-msg3{
+    position: relative;
+    text-align: center;
+    margin-bottom: .50rem;
+}
+.content .base-msg .base-msg3::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.content .base-msg .base-msg3 ul{
+    position: relative;
+    display: block;
+}
+.content .base-msg .base-msg3 ul li{
+    position: relative;
+    float: left;
+    width: 33.3%;
+    height: 2.12rem;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #e7e7e7;
+}
+.content .base-msg .base-msg3 ul li:nth-of-type(2){
+    position: relative;
+    background-color: #292929;
+    color: #fff;
+}
+.content .base-msg .base-msg3 ul li:nth-of-type(2) h4{
+    display: block;
+    padding-bottom: .05rem;
+    margin-bottom:.05rem;
+    border-bottom: 1px solid #bcbcbc;
+}
+.content .base-msg .base-msg3 ul li:nth-of-type(2) p{
+    display: block;
+    padding:.05rem;
+    font: .14rem "微软雅黑",Arial, sans-serif;
+    /*border-bottom: 1px solid #;*/
+}
+.content .base-msg .base-msg3 ul li:nth-of-type(2) span{
+    font: .14rem "微软雅黑",Arial, sans-serif;
+    color: #bcbcbc;
+}
+.content .base-msg .base-msg3 ul li:nth-of-type(2)::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-left: .34rem solid #fff;
+    border-top: .30rem solid transparent;
+    border-bottom: .30rem solid transparent;
+    left: 0;
+    top:50%;
+    transform: translateY(-50%);
+}
+.content .base-msg .base-msg3 ul li:nth-of-type(2n){
+    padding:.50rem;
+}
+.content .base-msg .base-msg3 ul li:nth-of-type(4),.content .base-msg .base-msg3 ul li:nth-of-type(6){
+    color: #2f2f2f;
+    font: .14rem "微软雅黑",Arial, sans-serif;
+}
+.content .base-msg .base-msg3 ul li .box{
+    display: block;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+}
+.content .base-msg .base-msg3 ul li img{
+    width: 2.71rem;
+    height: 2.12rem;
+}
+/*信息展示第四部分*/
+.content .base-msg .base-msg4 .base-msg4-top{
+    text-align: center;
+    margin-bottom:.50rem;
+}
+.content .base-msg .base-msg4 .base-msg4-top img{
+    display: block;
+    width: 8.22rem;
+    height: 4.17rem;
+}
+.content .base-msg .base-msg4 .base-msg4-top p{
+    display: inline-block;
+    width: 4.82rem;
+    font: .14rem "微软雅黑",Arial, sans-serif;
+}
+.content .base-msg .base-msg4 .base-msg4-bottom{
+    position: relative;
+    padding:.50rem 0;
+}
+.content .base-msg .base-msg4 .base-msg4-bottom::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.content .base-msg .base-msg4 .base-msg4-bottom .base-msg4-bottom-left,.content .base-msg .base-msg4 .base-msg4-bottom .base-msg4-bottom-right{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.content .base-msg .base-msg4 .base-msg4-bottom .base-msg4-bottom-left{
+    padding-top:.54rem ;
+}
+.content .base-msg .base-msg4 .base-msg4-bottom .base-msg4-bottom-left h1{
+    font: .18rem "微软雅黑",Arial, sans-serif;
+    padding-bottom:.30rem;
+}
+.content .base-msg .base-msg4 .base-msg4-bottom .base-msg4-bottom-left p{
+    font: .14rem "微软雅黑",Arial, sans-serif;
+}
+.content .base-msg .base-msg4 .base-msg4-bottom .base-msg4-bottom-right img{
+    display: block;
+    width: 3.66rem;
+    height: 3.19rem;
+}
+/*共同部分css*/
+.content .base-msg .what h1{
+    display: block;
+    padding:.30rem 0;
+    font:.28rem "微软雅黑",Arial, sans-serif;
+    text-align: left;
+}
+/*信息展示第五部分*/
+.content .base-msg .base-msg5 .base-msg5-shop-list{
+    position: relative;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list ul{
+    position: relative;
+    display: block;
+    padding-bottom: 3rem;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list .turn{
+    display: block;
+    position: absolute;
+    width: .22rem;
+    height: .52rem;
+    font-size: .17rem;
+    color: #fff;
+    background-color: #c4c4c4;
+    text-align: center;
+    line-height: .52rem;
+    top: 30%;
+    transform: translate(50%,50%);
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list .turn a{
+    display: block;
+    font-size: 0;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list .turn img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list .turn:first-of-type{
+    left: -5%;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list .turn:last-of-type{
+    right: -3%;
+}
+
+.content .base-msg .base-msg5 .base-msg5-shop-list ul li{
+    position: relative;
+    float: left;
+    width: 25%;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list ul li::before{
+    content: '';
+    position: absolute;
+    width: .75rem;
+    border-bottom: .03rem solid #959595;
+    left: 50%;
+    bottom:-3%;
+    transform:translateX(-50%);
+    display: none;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list ul li a{
+display: block;
+color: #000;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list ul li img{
+    width: 2.04rem;
+    height: 2.58rem;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list ul li:hover p,.content .base-msg .base-msg5 .base-msg5-shop-list ul li:hover::before{
+    display: block;
+}
+.content .base-msg .base-msg5 .base-msg5-shop-list ul li p{
+    display: block;
+    position: absolute;
+    width: 2.54rem;
+    font: .14rem "微软雅黑", Arial, sans-serif;
+    left: -10%;
+    bottom: -12%;
+    display: none;
+}
+
